@@ -1,3 +1,4 @@
+// better clear for elements
 @mixin clearfix {
   &:after {
     content: "";
@@ -11,6 +12,13 @@
   }
 }
 
+// border bottom same color
+@mixin gray-border($bcolor) {
+	border-bottom: 1px solid $bcolor;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
 // add prefixes to border radius
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -19,8 +27,21 @@
           border-radius: $radius;
 }
 
+// custom padding that allows 'null'
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
 
-
+// custom margin that allows 'null'
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
 
 // define breakpoints with words, not pixels
 @mixin breakpoint($point) {

@@ -12,7 +12,7 @@
 		margin-right: 25px;
 		text-align: center;
 		background-color: $alabaster;
-		border-bottom: 1px solid $mercury;
+		@include gray-border(#000);
 		height: 185px;
 		margin-bottom: 30px;
 		width: 180px;
