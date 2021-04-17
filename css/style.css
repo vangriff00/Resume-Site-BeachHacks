@@ -190,6 +190,54 @@ header {
   color: #fdfdfd;
 }
 
+.menu {
+  height: 100px;
+  background-color: #ededed;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  border-radius: 0 0 15px 15px;
+}
+
+.tabs {
+  height: 116px;
+  position: absolute;
+  margin-top: -14px;
+  z-index: 100;
+}
+.tabs li {
+  float: left;
+  height: 116px;
+}
+.tabs li > a {
+  padding-top: 28px;
+  width: 115px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  color: #b9b9b9;
+  text-align: center;
+  font-weight: 300;
+}
+.tabs li > a > i {
+  font-size: 45px;
+  speak: none;
+  font-family: icomoon;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+.tabs li.active {
+  background: url(../images/tab-hover.png) no-repeat;
+}
+.tabs li.active a {
+  color: #98cee4;
+}
+
+.disabled {
+  display: none !important;
+}
+
 #profile {
   background: #98cee4;
   background-image: url(../images/header-shadow.png);
@@ -262,55 +310,6 @@ header {
   padding-top: 4px;
   font-weight: 300;
   color: #fdfdfd;
-}
-
-.menu {
-  height: 100px;
-  background-color: #ededed;
-  position: relative;
-  width: 600px;
-  padding-left: 130px;
-  padding-right: 130px;
-  border-radius: 0 0 15px 15px;
-}
-
-.tabs {
-  height: 116px;
-  position: absolute;
-  margin-top: -14px;
-  z-index: 100;
-}
-.tabs li {
-  float: left;
-  height: 116px;
-}
-.tabs li > a {
-  padding-top: 28px;
-  width: 115px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  font-size: 16px;
-  color: #b9b9b9;
-  text-align: center;
-  font-weight: 300;
-}
-.tabs li > a > i {
-  font-size: 45px;
-  speak: none;
-  font-family: icomoon;
-  font-style: normal;
-  display: block;
-  margin-bottom: 5px;
-}
-.tabs li.active {
-  background: url(../images/tab-hover.png) no-repeat;
-}
-.tabs li.active a {
-  color: #98cee4;
-}
-
-.disabled {
-  display: none !important;
 }
 
 #resume {
@@ -935,7 +934,7 @@ div.footer .copyright {
   padding-left: 6px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 960px) {
   #container {
     width: 750px;
   }
@@ -944,9 +943,6 @@ div.footer .copyright {
     height: 100px;
     background-color: #ededed;
     position: relative;
-    width: 590px;
-    padding-left: 80px;
-    padding-right: 80px;
   }
 
   .about {
@@ -1075,9 +1071,6 @@ div.footer .copyright {
     height: 100px;
     background-color: #ededed;
     position: relative;
-    width: 370px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   .skills-section {
@@ -1210,8 +1203,11 @@ div.footer .copyright {
   .tabs {
     padding-left: 0;
   }
+  .tabs li {
+    width: 80px;
+  }
   .tabs li > a {
-    width: 75px;
+    width: 60px;
     font-size: 14px;
   }
   .tabs li.active {
@@ -1222,9 +1218,6 @@ div.footer .copyright {
     height: 100px;
     background-color: #ededed;
     position: relative;
-    width: 200px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   #resume {

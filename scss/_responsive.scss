@@ -6,9 +6,6 @@
 		height: 100px;
 		background-color: $gallery;
 		position: relative;
-		width: 590px;
-		padding-left: 80px;
-		padding-right: 80px;
 	}
 	.about {
 		width: 410px;
@@ -127,9 +124,6 @@
 		height: 100px;
 		background-color: $gallery;
 		position: relative;
-		width: 370px;
-		padding-left: 50px;
-		padding-right: 50px;
 	}
 	.skills-section {
 		width: 420px;
@@ -253,8 +247,9 @@
 	.tabs {
 		padding-left: 0;
 		li {
+			width: 80px;
 			> a {
-				width: 75px;
+				width: 60px;
 				font-size: 14px;
 			}
 			&.active {
@@ -266,9 +261,6 @@
 		height: 100px;
 		background-color: $gallery;
 		position: relative;
-		width: 200px;
-		padding-left: 50px;
-		padding-right: 50px;
 	}
 	#resume {
 		padding: 10px;

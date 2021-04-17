@@ -106,7 +106,7 @@ jQuery(document).ready(function(){
 	        onTouch: true
 	    },
         items: {
-            width: 140,
+            width: 130,
             visible: {
               min: 2,
               max: 5
